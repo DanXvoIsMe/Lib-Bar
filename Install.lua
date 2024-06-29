@@ -34,7 +34,7 @@ end
 for url in file:lines() do
   local filename = url:match("^.+/(.+)$")
   if filename then
-    local path = "/lib" .. filename
+    local path = "/lib/" .. filename
     downloadFile(url, path)
   end
 end
